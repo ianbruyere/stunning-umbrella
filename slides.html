@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { 
+        font-family: 'Courier'; 
+        font-size: large;
+        }
+      h1, h2, h3 {
+        font-family: 'Arial';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; 
+      font-size: small;}
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# The Woes of My Life
+## You thought you were here to learn something...you’re not; you’re here to be earholes for my problems
+---
+
+# The Certified by Google, Microsoft, RedHat Bruyere Curriculum
+
+1. Learn ONE Language REALLY well
+2. Find a problem space, learn about that
+3. Spider-Web From There
+
+---
+
+# Pitfalls of Self-Teaching
+
+* No Fact vs. Fiction Filter
+* Lack of Formal Structure
+* Different Author, same Blog Post
+
+# The Solution
+## Textbooks
+
+---
+
+## Notes On Programming Languages
+
+#### Assembly
+
+```Assembly
+section .text                   
+    global  _start              
+_start:
+    mov     edx,len            
+    mov     ecx,msg             
+    mov     ebx,1               
+    mov     eax,4               
+    int     0x80                
+  	mov     ebx,0               
+    mov     eax,1               
+    int     0x80                
+section .data                   
+msg db      "Hello, world!",0xa 
+len equ     $ - msg             
+```
+
+---
+
+#### C 
+```C
+#include <stdio.h>
+    int main() {
+       printf("Hello, World!");
+       return 0;
+    }
+```
+#### Java
+
+```Java
+class void hello_world {
+    public static void main() {
+        System.out.println("Hello World");
+    }
+}
+```
+#### R
+```R
+myString <- "Hello, World!"
+print (myString)
+```
+#### Python
+
+```Python
+print('Hello World')
+```
+
+#### JavaScript
+
+```JavaScript
+console.log("Hello World")
+```
+
+---
+
+#### Brainfuck
+https://en.wikipedia.org/wiki/Brainfuck
+```Brainfuck
+++++++++               
+[
+    >++++               
+    [                   
+        >++             
+        >+++            
+        >+++            
+        >+              
+        <<<<-           
+    ]                   
+    >+                 
+    >+                 
+    >-                  
+    >>+                
+    [<]                                      
+    <-                  
+]                       
+>>.                     
+>---.                   
++++++++..+++.           
+>>.                     
+<-.                     
+<.                      
++++.------.--------.    
+>>+.                    
+>++.
+```
+---
+
+## Notes on Programming Language
+What makes a coding language "good" is a function of how big/supportive/active it's community is.
+
+There is inherent ways in how a coding language is designed that make it easier to build the tool.
+That's beyond my current understanding, unless you want me talk out the side of my neck, which I'm happy to do.
+
+---
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
